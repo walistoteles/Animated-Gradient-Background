@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GradientAnim.MainPage">
+
+    <Grid>
+
+        <BoxView x:Name="bdGradient" Scale="4" AnchorX="1" AnchorY="0">
+            
+            <BoxView.Background>
+                <LinearGradientBrush >
+                    <GradientStop Color="#23D5ab" Offset="0.1"/>
+                    <GradientStop Color="#23A505" Offset="0.3"/>
+                    <GradientStop Color="#E73C7E" Offset="0.6"/>
+                    <GradientStop Color="#EE7752" Offset="1.0"/>
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+       
+        <Frame HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="160" BackgroundColor="Transparent" BorderColor="White">
+            <Label Text="ANIMATED GRADIENT BACKGROUND" FontSize="Title" TextColor="White" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
+        </Frame>
+    </Grid>
+
+</ContentPage>
